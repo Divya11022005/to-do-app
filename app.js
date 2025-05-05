@@ -1,9 +1,7 @@
- // filepath: /simple-todo-app/simple-todo-app/src/scripts/app.js
-
 document.addEventListener("DOMContentLoaded", function() {
-    const taskInput = document.getElementById("task-input");
-    const addTaskButton = document.getElementById("add-task");
-    const taskList = document.getElementById("task-list");
+    const taskInput = document.getElementById("taskInput"); // Corrected ID
+    const addTaskButton = document.getElementById("addTaskButton"); // Corrected ID
+    const taskList = document.getElementById("taskList"); // Corrected ID
 
     addTaskButton.addEventListener("click", function() {
         const taskText = taskInput.value.trim();
