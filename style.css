@@ -59,3 +59,68 @@ h1 {
 .remove-task:hover {
     background-color: #c82333;
 }
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#task-input {
+    width: calc(100% - 110px); /* Adjust width for button alignment */
+    display: inline-block;
+}
+
+#add-task {
+    width: 100px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #task-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #add-task {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .remove-task {
+        margin-top: 5px;
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #task-input, #add-task {
+        font-size: 1rem;
+    }
+
+    .task-item {
+        font-size: 0.9rem;
+    }
+
+    .remove-task {
+        font-size: 0.8rem;
+    }
+}
